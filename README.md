@@ -12,6 +12,13 @@ cd primo_mpi
 - `primo_mpi.c`: Código-fonte principal que executa o cálculo de primos.
 - `hostfile`: Arquivo de configuração contendo os IPs/nomes das máquinas que serão usadas no MPI (exemplo abaixo).
 
+## 📚 Bibliotecas Necessárias
+
+Antes de compilar, verifique se os seguintes pacotes estão instalados:
+
+OpenMPI
+SSH
+
 ## 🛠️ Compilação
 
 Compile o programa com `mpicc`:
@@ -54,13 +61,6 @@ mpirun -np 2 -hostfile hostfile ./primos
 ## 📊 Resultados
 
 Você deve esperar um resultado semelhante à este:
+![image](https://github.com/user-attachments/assets/62d15ba2-99c9-423e-ac76-584783a08fd7)
 
-```bash
-Numeros primos encontrados: 9592
-Maior primo: 99991
-Tempo de execucao: 0.087 segundos
-```
-
-
-![image](https://github.com/user-attachments/assets/6497bdca-b384-4a04-8423-a20655aedb27)
 
